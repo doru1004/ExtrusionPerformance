@@ -52,7 +52,7 @@ if [ x"$lhs" = "x5" ];
     echo "Running 4xF RHS."
 fi
 
-base="/data/gb308/firedrake/PerformanceTesting"
+base="${PWD}/../../"
 scripts="${base}/DATA/SCRIPTS"
 gnuplot_dir="${base}/DATA/MASS_${side}_${vers}"
 
