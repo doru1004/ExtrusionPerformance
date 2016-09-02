@@ -14,7 +14,7 @@ parameters['coffee']['Ofast'] = True
 
 print "Start building Mesh"
 layers = int(sys.argv[4])
-mesh = Mesh("/data/gb308/firedrake/MESHES/square_"+str(layers)+"_1.msh")
+mesh = Mesh("../../MESHES/square_"+str(layers)+"_1.msh")
 
 print "Finish building Mesh"
 m = ExtrudedMesh(mesh, layers=layers, layer_height=0.1)

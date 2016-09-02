@@ -266,7 +266,6 @@ for variable in x:
         i += 1
         aux_x.append(x[variable][var2][0])
         aux_y.append(x[variable][var2][5])
-        # ax.scatter([aux_x[var2],],[aux_y[var2],], s=80, color=x[variable][0][3], alpha=1.0) #print opIntensity
         if int(x[variable][var2][2]) == 0:
             ax.scatter([aux_x[var2],],[aux_y[var2],], s=100, color=x[variable][0][3], alpha=1.0)
         else:
@@ -293,7 +292,6 @@ for i, space in enumerate(prod_spaces):
     if space in names:
         cnt += 1
         ax.scatter([-cnt,],[-cnt,], s=80, color=colors[i], alpha=1.0, label=space)
-        # ax1.scatter([-cnt,],[-cnt,], s=30, color=colors[i], alpha= 0.95, label=space)
 gca().legend(loc="lower right")
 
 # alpha should differ
@@ -456,7 +454,6 @@ for variable in x:
         plt.plot(aux_layers_x[1:], aux_layers_y[1:], '-', color=pickedColour, linewidth=ln_width+1)
     else:
         plt.plot(aux_layers_x, aux_layers_y, '-', color=pickedColour, linewidth=ln_width+1)  
-    # ax1.annotate(x[variable][0][2], xy=(aux_layers_x[1], aux_layers_y[1]), xycoords='data', xytext=(+3+xOffset, +1+yOffset), textcoords='offset points', fontsize=fontsize4)
 
 # This points are only for the legend (change this in the future)
 cnt = 0

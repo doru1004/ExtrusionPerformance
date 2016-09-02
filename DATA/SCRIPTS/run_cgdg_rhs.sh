@@ -45,7 +45,7 @@ if [ x"$lhs" = "x3" ];
     echo "Running FF RHS."
 fi
 
-base="/data/gb308/firedrake/PerformanceTesting"
+base="${PWD}/../../"
 scripts="${base}/DATA/SCRIPTS"
 # Version must include the type of test and mesh size
 gnuplot_dir="${base}/DATA/MASS_${side}_${vers}"

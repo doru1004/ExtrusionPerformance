@@ -1,5 +1,5 @@
 #!/bin/bash
-greedy_reader="/data/gb308/firedrake/PerformanceTesting/greedy_reader_gnuplot.py"
+greedy_reader="${PWD}/../../greedy_reader_gnuplot.py"
 
 # TODO: change this to be more general and not taylored to this particular situation
 threads="0"
