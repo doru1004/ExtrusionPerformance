@@ -92,12 +92,6 @@ greedy_reader="${base}/greedy_compact_reader.py"
 
 python $greedy_reader $res $gnuplot_dir $side $vectorized
 
-for entry in "$gnuplot_dir"/*."gnuplot"
-do
-    gnuplot $entry
-done
-
-# TODO: Change this to be generic for RHS and LHS
 cat "$gnuplot_dir"/RHS__*_1.txt > "${rfl_dir}/RHS_1.txt"
 cat "$gnuplot_dir"/RHS__*_8.txt > "${rfl_dir}/RHS_8.txt"
 cat "$gnuplot_dir"/RHS__*_16.txt > "${rfl_dir}/RHS_16.txt"
