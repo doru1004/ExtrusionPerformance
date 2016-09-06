@@ -20,7 +20,9 @@ MESHES/
 Set the environment and run test script:
 
 . set.env
+
 cd DATA/SCRIPTS
+
 sh run.sh
 
 # Output
