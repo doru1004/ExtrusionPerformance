@@ -5,13 +5,20 @@ Test harness for exploring the performance of finite element assembly in Firedra
 
 In order to run the tests a Firedrake installation is needed.
 
-Please follow the installation steps detailed in the Firedrake
-release referenced in the paper:
+Clone the Firedrake repository referenced in the paper.
+
+Please follow the installation instructions detailed in the Firedrake
+repository:
 
 docs/source/download.rst
 
 The meshes used in the experiments have been archived separately.
-When running the experiments please un-archive the meshes into
+
+In the main folder of the test harness repository create the following folder:
+
+mkdir MESHES
+
+Before running the experiments please un-archive the meshes into
 
 MESHES/
 
@@ -27,10 +34,10 @@ sh run.sh
 
 # Output
 
-MASS_FRHS_NEW_7MV_2/
-
 The output for generating the results in the paper has been included.
+
+MASS_FRHS_NEW_7MV_3/
 
 The plots used in the paper are found in:
 
-MASS_FRHS_NEW_7MV_2/ROOFLINE
+MASS_FRHS_NEW_7MV_3/ROOFLINE
